@@ -4,7 +4,7 @@
   when: os_type == 'windows'
 
 - block:
-    - name: Executing script mcafee-installer.ps1
+    - name: Executing script redcloak-installer.ps1
       win_shell: "{{ lookup('file', '../scripts/redcloak-installer.ps1') }}" 
       register: script_output
       environment:
